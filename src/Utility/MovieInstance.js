@@ -1,0 +1,12 @@
+// src/Utility/MovieInstance.js
+import axios from "axios";
+
+const MovieInstance = axios.create({
+  baseURL: "https://api.themoviedb.org/3",
+  params: {
+    api_key: import.meta.env.VITE_TMDB_API_KEY,
+    language: "en-US",
+  },
+});
+
+export default MovieInstance;

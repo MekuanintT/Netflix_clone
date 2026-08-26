@@ -1,0 +1,38 @@
+
+!.vscode/extensions.json
+# Build output
+# Dependencies
+# Editor / OS
+# Editor directories and files
+# Environment variables
+# Logs
+# Misc
+*.local
+*.log
+*.njsproj
+*.ntvs*
+*.sln
+*.suo
+*.sw?
+.DS_Store
+.env
+.env.*.local
+.env.local
+.idea
+.idea/
+.vscode/*
+Thumbs.db
+build/
+coverage/
+dist
+dist-ssr
+dist-ssr/
+dist/
+lerna-debug.log*
+logs
+node_modules
+node_modules/
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
