@@ -106,10 +106,19 @@ Team members: please read [`CONTRIBUTING.md`](./CONTRIBUTING.md) before opening 
 
 ## Team
 
-| Name | Role |
-|------|------|
-| Mekuanint T. | Project Lead |
-| _add teammate_ | _role_ |
+Built collaboratively by our team — everyone owns a piece of this project.
+
+| Name | Role | Working On |
+|------|------|------|
+| **Mekuanint T.** | Lead / Coordination | Setup, environment, architecture, final QA & polish |
+| **Yonatan Fekadu** | Frontend Engineer | Header |
+| **Ermi** | Frontend Engineer | Banner |
+| **Ibrahim** | Frontend Engineer | Display / Row Fetching |
+| **Damtew** | Frontend Engineer | Slideshow / Carousel |
+| **Yordanos** | Frontend Engineer | Movie Card |
+| **Sosi** | Frontend Engineer | Footer |
+
+See [`TEAM.md`](./TEAM.md) for how we work together and [`TASKS.md`](./TASKS.md) for the full task breakdown.
 
 ## License
 

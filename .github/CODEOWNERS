@@ -1,0 +1,19 @@
+# CODEOWNERS
+# Automatically requests the right reviewer when a PR touches these paths.
+# This isn't about gatekeeping — it just makes sure the person closest to
+# a component sees changes to it first.
+# Note: full enforcement (blocking merge without owner approval) requires
+# a public repo or GitHub Pro/Team plan — see README for current repo status.
+
+# Component areas
+/src/components/Header/            @yonatanfekadu
+/src/components/Banner/            @ermi
+/src/components/DisplayRow/        @ibrahim
+/src/components/Slideshow/         @damtew
+/src/components/MovieCard/         @yordanos
+/src/components/Footer/            @sosi
+
+# Shared infrastructure
+/src/Utility/                      @MekuanintT
+/src/Data/                         @MekuanintT
+/.github/                          @MekuanintT
