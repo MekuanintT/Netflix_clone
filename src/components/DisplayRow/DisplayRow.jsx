@@ -1,12 +1,13 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import style from "./DisplayRow.module.css";
 import SlideShow from "../SlideShow/SlideShow";
 import MovieInstance from "../../Utility/MovieInstance";
-import Requests from "../../Utility/RequestUrls";
+import Requests from "../../Utility/requestUrls";
+
 function DisplayRow() {
-  const [movies, setMovies] = Rteact.usestate({
+  const [movies, setMovies] = useState({
     trending: [],
-    netflix0riginals: [],
+    netflixOriginals: [],
     topRated: [],
     action: [],
     comedy: [],
@@ -41,22 +42,28 @@ function DisplayRow() {
         MovieInstance.get(Requests.fetchDocumentaries),
       ]);
 
-      // Add your code to handle the responses here
+      setMovies({
+        trending: trendingRes.data.results,
+        netflixOriginals: netflixRes.data.results,
+        topRated: topRatedRes.data.results,
+        action: actionRes.data.results,
+        comedy: comedyRes.data.results,
+        horror: horrorRes.data.results,
+        romance: romanceRes.data.results,
+        documentaries: docRes.data.results,
+      });
     } catch (error) {
       console.error("Error fetching movies:", error);
     }
-
-    return (
-      <div className={style.mainwrapper}>
-        <SlideShow title="Suggested for You" movies={movies.trending} />
-        <SlideShow
-          title="Popular on Netflix"
-          movies={movies.netflixOriginals}
-        />
-        <SlideShow title="Trending Now" movies={movies.trending} />
-        <SlideShow title="Top Rated" movies={movies.topRated} />
-      </div>
-    );
   };
+
+  return (
+    <div className={style.mainwrapper}>
+      <SlideShow title="Suggested for You" movies={movies.trending} />
+      <SlideShow title="Popular on Netflix" movies={movies.netflixOriginals} />
+      <SlideShow title="Trending Now" movies={movies.trending} />
+    </div>
+  );
 }
+
 export default DisplayRow;
