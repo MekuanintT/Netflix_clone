@@ -7,8 +7,6 @@ import { IoIosArrowDropdownCircle } from "react-icons/io";
 const IMAGE_BASE = "https://image.tmdb.org/t/p/w500";
 
 function MovieCard({ movie }) {
-  console.log(movie);
-
   let genres = ["Adventure", "Action", "Thriller"];
 
   return (
@@ -28,12 +26,6 @@ function MovieCard({ movie }) {
           src={`${IMAGE_BASE}${movie?.poster_path}`}
           alt="Hover Image"
         />
-
-        {/* <img
-          className={styles.poster}
-          src={movie?.poster_path}
-          alt={movie?.title || "Poster Image"}
-        /> */}
         
         {/* badge */}
         <div>Recently added</div>
