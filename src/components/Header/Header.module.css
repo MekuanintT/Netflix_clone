@@ -1,0 +1,272 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 68px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 48px;
+  box-sizing: border-box;
+
+  background-color: transparent;
+
+  z-index: 1000;
+
+  transition: background-color 0.3s ease;
+}
+
+/* T-07: solid background after scrolling */
+.scrolled {
+  background-color: #141414;
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  color: #e50914;
+
+  font-size: 24px;
+  font-weight: 700;
+
+  letter-spacing: -1px;
+
+  margin-right: 48px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav a {
+  color: #fff;
+
+  text-decoration: none;
+
+  font-size: 14px;
+  white-space: nowrap;
+
+  transition: color 0.2s ease;
+}
+
+.nav a:hover {
+  color: #b3b3b3;
+}
+
+
+/* =========================
+   T-08: RIGHT SIDE
+   ========================= */
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+
+/* =========================
+   T-08: SEARCH
+   ========================= */
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+
+  border: 1px solid transparent;
+
+  transition: all 0.25s ease;
+}
+
+.searchOpen {
+  background-color: #000;
+  border-color: #fff;
+}
+
+.searchInput {
+  width: 220px;
+  height: 32px;
+
+  padding: 0 10px;
+
+  border: none;
+  outline: none;
+
+  background-color: transparent;
+  color: #fff;
+
+  font-size: 14px;
+}
+
+.searchInput::placeholder {
+  color: #b3b3b3;
+}
+
+
+/* =========================
+   T-08: ICONS
+   ========================= */
+
+.iconButton {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: none;
+  background: transparent;
+
+  color: #fff;
+
+  cursor: pointer;
+}
+
+.icon {
+  width: 23px;
+  height: 23px;
+
+  fill: none;
+
+  stroke: #fff;
+  stroke-width: 1.8;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+
+/* =========================
+   T-08: NOTIFICATION BADGE
+   ========================= */
+
+.notificationBadge {
+  position: absolute;
+
+  top: 1px;
+  right: 1px;
+
+  width: 7px;
+  height: 7px;
+
+  background-color: #e50914;
+
+  border-radius: 50%;
+}
+
+
+/* =========================
+   T-08: PROFILE
+   ========================= */
+
+.profileContainer {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+}
+
+.profileButton {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: none;
+  border-radius: 4px;
+
+  background-color: #555;
+
+  cursor: pointer;
+}
+
+.profileIcon {
+  width: 21px;
+  height: 21px;
+
+  fill: none;
+
+  stroke: #fff;
+  stroke-width: 1.5;
+
+  stroke-linecap: round;
+}
+
+.arrowButton {
+  display: flex;
+  align-items: center;
+
+  padding: 0;
+  margin-left: 6px;
+
+  border: none;
+  background: transparent;
+
+  cursor: pointer;
+}
+
+.arrow {
+  width: 15px;
+  height: 15px;
+
+  fill: none;
+
+  stroke: #fff;
+  stroke-width: 2;
+
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+
+/* =========================
+   T-08: PROFILE DROPDOWN
+   ========================= */
+
+.dropdown {
+  position: absolute;
+
+  top: 45px;
+  right: 0;
+
+  width: 180px;
+
+  padding: 10px 0;
+
+  background-color: rgba(0, 0, 0, 0.95);
+
+  border: 1px solid #333;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown a {
+  display: block;
+
+  padding: 10px 16px;
+
+  color: #fff;
+
+  text-decoration: none;
+
+  font-size: 14px;
+}
+
+.dropdown a:hover {
+  background-color: #333;
+}
